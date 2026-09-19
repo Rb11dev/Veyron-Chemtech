@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veyron Chemtech — Industrial Surface Treatment Chemicals</title>
+<meta name="description" content="Veyron Chemtech manufactures degreasing, derusting, phosphating, conversion coating and corrosion-protection chemistry for industrial metal-finishing lines.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Veyron Chemtech — Industrial Surface Treatment Chemicals">
+<meta property="og:description" content="Precision surface chemistry for modern manufacturing.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwYjEyMjAiLz48Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSI4IiBmaWxsPSIjM2ZiNmE4Ii8+PGNpcmNsZSBjeD0iNDIiIGN5PSI0MCIgcj0iNiIgZmlsbD0iI2M3OWE0YiIvPjxsaW5lIHgxPSIyNCIgeTE9IjI0IiB4Mj0iNDIiIHkyPSI0MCIgc3Ryb2tlPSIjM2ZiNmE4IiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9Ii42Ii8+PC9zdmc+Cg==">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Veyron Chemtech",
+  "description": "Industrial surface-treatment chemical manufacturer."
+}
+</script>
+<style>
+/* =========================================================================
+   VEYRON CHEMTECH — DESIGN SYSTEM
+   Original palette: deep graphite / cobalt-teal accent / warm steel white
+   ========================================================================= */
+
+:root{
+  /* Core palette — deliberately NOT copying any reference site's colours */
+  --c-bg:            #0b1220;
+  --c-bg-soft:       #101a2c;
+  --c-surface:       #ffffff;
+  --c-surface-alt:   #f4f6fa;
+  --c-ink:           #0d1420;
+  --c-ink-soft:      #4a5568;
+  --c-line:          #e2e6ee;
+  --c-accent:        #1d7d74;   /* cobalt-teal */
+  --c-accent-dark:   #145c55;
+  --c-accent-light:  #3fb6a8;
+  --c-gold:          #c79a4b;   /* warm metal accent for highlights */
+  --c-white:         #ffffff;
+
+  --grad-hero: radial-gradient(circle at 20% 20%, rgba(63,182,168,0.18), transparent 45%),
+               radial-gradient(circle at 80% 0%, rgba(199,154,75,0.10), transparent 40%),
+               linear-gradient(180deg, #0b1220 0%, #0e1626 60%, #101a2c 100%);
+
+  --font-head: 'Sora', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 2px 10px rgba(13,20,32,0.06);
+  --shadow-md: 0 10px 30px rgba(13,20,32,0.10);
+  --shadow-lg: 0 24px 60px rgba(13,20,32,0.16);
+  --maxw: 1240px;
+  --transition: 220ms cubic-bezier(.4,0,.2,1);
+}
+
+@media (prefers-color-scheme: dark){ /* site intentionally uses fixed light content theme for B2B readability */ }
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family: var(--font-body);
+  color: var(--c-ink);
+  background: var(--c-surface);
+  -webkit-font-smoothing: antialiased;
+  overflow-x:hidden;
+  font-size: 16px;
+}
+h1,h2,h3,h4{ font-family: var(--font-head); font-weight:600; line-height:1.2; margin:0 0 .5em; letter-spacing:-.01em; }
+h2{ font-size: clamp(1.4rem, 2.4vw, 1.85rem); }
+h3{ font-size: clamp(1rem, 1.3vw, 1.1rem); }
+p{ line-height:1.75; color: var(--c-ink-soft); margin:0 0 1em; }
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+ul{ margin:0; padding:0; list-style:none; }
+button{ font-family:inherit; cursor:pointer; }
+
+.container{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+.section{ padding:72px 0; }
+.section--tight{ padding:48px 0; }
+.section--alt{ background:var(--c-surface-alt); }
+.section--dark{ background:var(--grad-hero); color:#e8ecf3; }
+.section--dark p{ color:#aeb9c9; }
+.section--dark h1, .section--dark h2, .section--dark h3{ color:#fff; }
+@media (max-width:760px){
+  .section{ padding:44px 0; }
+  .section--tight{ padding:32px 0; }
+  .container{ padding:0 20px; }
+}
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:.78rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color: var(--c-accent-dark); margin-bottom:14px;
+}
+.section--dark .eyebrow{ color: var(--c-accent-light); }
+.eyebrow::before{ content:''; width:22px; height:2px; background: var(--c-gold); display:inline-block; }
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:7px;
+  padding:11px 22px; border-radius:8px; font-weight:600; font-size:.9rem;
+  border:1px solid transparent; transition: all var(--transition);
+  white-space:nowrap;
+}
+.btn--primary{ background: var(--c-accent); color:#fff; box-shadow: 0 3px 10px rgba(29,125,116,.22); }
+.btn--primary:hover{ background: var(--c-accent-dark); transform: translateY(-1px); box-shadow: 0 5px 14px rgba(29,125,116,.28); }
+.btn--outline{ border-color: rgba(255,255,255,.35); color:#fff; }
+.btn--outline:hover{ background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.6); transform: translateY(-1px); }
+.btn--outline-dark{ border-color: var(--c-line); color: var(--c-ink); }
+.btn--outline-dark:hover{ background: var(--c-surface-alt); border-color: var(--c-accent); color: var(--c-accent-dark); }
+.btn--sm{ padding:8px 16px; font-size:.8rem; }
+.btn--block{ width:100%; }
+.btn:focus-visible{ outline-offset:3px; }
+.btn svg{ width:16px; height:16px; flex-shrink:0; }
+
+.grid{ display:grid; gap:20px; }
+.grid-2{ grid-template-columns: repeat(2,1fr); }
+.grid-3{ grid-template-columns: repeat(3,1fr); }
+.grid-4{ grid-template-columns: repeat(4,1fr); }
+@media (max-width:980px){ .grid-3,.grid-4{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width:640px){ .grid-2,.grid-3,.grid-4{ grid-template-columns: 1fr; gap:20px; } }
+
+.card{
+  position:relative; background:#fff; border:1px solid var(--c-line); border-radius: var(--radius-sm);
+  padding:24px 22px; transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  overflow:hidden;
+}
+.card::before{
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background: linear-gradient(90deg, var(--c-accent), var(--c-gold));
+  transform: scaleX(0); transform-origin:left; transition: transform var(--transition);
+}
+.card:hover{ transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: transparent; }
+.card:hover::before{ transform: scaleX(1); }
+.card p{ font-size:.92rem; }
+.card__icon{
+  width:42px; height:42px; border-radius:10px; display:flex; align-items:center; justify-content:center;
+  background: linear-gradient(135deg, rgba(29,125,116,.12), rgba(199,154,75,.10)); color: var(--c-accent); margin-bottom:16px;
+}
+.card__icon svg{ width:20px; height:20px; }
+
+/* ---------- Reveal-on-scroll ---------- */
+.reveal{ opacity:0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.6,.2,1); }
+.reveal.is-visible{ opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){
+  .reveal{ opacity:1; transform:none; transition:none; }
+  html{ scroll-behavior:auto; }
+}
+
+/* ---------- Header / Nav ---------- */
+.site-header{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  padding:18px 0; transition: all var(--transition);
+  background: transparent;
+}
+.site-header.is-scrolled{
+  background: rgba(11,18,32,.86); backdrop-filter: blur(10px);
+  padding:12px 0; box-shadow: 0 2px 20px rgba(0,0,0,.15);
+}
+.nav{ display:flex; align-items:center; justify-content:space-between; }
+.nav__logo{ display:flex; align-items:center; gap:10px; font-family:var(--font-head); font-weight:700; font-size:1.2rem; color:#fff; }
+.nav__logo .dot{ width:10px; height:10px; border-radius:50%; background: var(--c-accent-light); }
+.nav__links{ display:flex; align-items:center; gap:6px; }
+.nav__item{ position:relative; }
+.nav__link{
+  display:flex; align-items:center; gap:5px; padding:10px 14px; border-radius:8px;
+  color:#dfe4ec; font-size:.92rem; font-weight:500; transition: color var(--transition), background var(--transition);
+}
+.nav__link:hover, .nav__item.is-open .nav__link{ color:#fff; background: rgba(255,255,255,.08); }
+.nav__link.is-active{ color:#fff; background: rgba(63,182,168,.16); }
+.nav__link svg{ width:14px; height:14px; transition: transform var(--transition); }
+.nav__item.is-open .nav__link svg{ transform: rotate(180deg); }
+.nav__dropdown{
+  position:absolute; top:calc(100% + 10px); left:0; min-width:230px;
+  background:#fff; border-radius:12px; box-shadow: var(--shadow-lg);
+  padding:10px; opacity:0; visibility:hidden; transform: translateY(8px);
+  transition: all var(--transition);
+}
+.nav__item.is-open .nav__dropdown{ opacity:1; visibility:visible; transform:none; }
+.nav__dropdown a{ display:block; padding:10px 14px; border-radius:8px; color:var(--c-ink); font-size:.9rem; font-weight:500; }
+.nav__dropdown a:hover{ background: var(--c-surface-alt); color: var(--c-accent-dark); }
+.nav__cta{ display:flex; align-items:center; gap:12px; }
+.nav__toggle{ display:none; background:none; border:none; padding:8px; }
+.nav__toggle span{ display:block; width:24px; height:2px; background:#fff; margin:5px 0; transition: all var(--transition); }
+
+@media (max-width: 1080px){
+  .nav__links{ display:none; }
+  .nav__toggle{ display:block; }
+  .nav__cta .btn{ display:none; }
+}
+
+/* Mobile drawer */
+.mobile-menu{
+  position:fixed; inset:0; z-index:1100; background: var(--c-bg);
+  transform: translateX(100%); transition: transform .35s cubic-bezier(.2,.7,.2,1);
+  display:flex; flex-direction:column; padding:24px;
+}
+.mobile-menu.is-open{ transform:none; }
+.mobile-menu__top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:32px; }
+.mobile-menu__close{ background:none; border:none; color:#fff; font-size:1.4rem; line-height:1; padding:6px 10px; border-radius:6px; transition: background var(--transition); }
+.mobile-menu__close:hover, .mobile-menu__close:focus-visible{ background: rgba(255,255,255,.1); }
+.mobile-menu__links{ display:flex; flex-direction:column; gap:4px; overflow-y:auto; }
+.mobile-menu__item > a, .mobile-menu__item > button{
+  width:100%; text-align:left; background:none; border:none; color:#fff; font-size:1.1rem; font-weight:600;
+  padding:14px 6px; border-bottom:1px solid rgba(255,255,255,.08); display:flex; justify-content:space-between; align-items:center;
+}
+.mobile-menu__item > button svg{ width:14px; height:14px; flex-shrink:0; }
+.mobile-menu__sub{ max-height:0; overflow:hidden; transition: max-height .3s ease; padding-left:12px; }
+.mobile-menu__item.is-open .mobile-menu__sub{ max-height:400px; }
+.mobile-menu__sub a{ display:block; padding:10px 6px; color:#b7c0cf; font-size:.95rem; }
+.mobile-menu__item > a.is-active,
+.mobile-menu__sub a.is-active{ color: var(--c-accent-light); }
+.mobile-menu__item > a.is-active{ border-bottom-color: rgba(63,182,168,.3); }
+.mobile-menu__item.is-active > button{ color: var(--c-accent-light); }
+.mobile-menu__footer{ margin-top:auto; padding-top:20px; display:flex; flex-direction:column; gap:12px; }
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative; min-height:auto; display:flex; align-items:center;
+  background: var(--grad-hero); color:#fff; overflow:hidden; padding:132px 0 76px;
+}
+.hero::before{
+  content:''; position:absolute; inset:0; pointer-events:none; opacity:.5;
+  background:
+    radial-gradient(560px 560px at 78% 12%, rgba(63,182,168,.20), transparent 60%),
+    radial-gradient(420px 420px at 8% 85%, rgba(199,154,75,.14), transparent 60%);
+  animation: driftGlow 14s ease-in-out infinite alternate;
+}
+@keyframes driftGlow{ from{ transform: translate3d(0,0,0) scale(1);} to{ transform: translate3d(-16px,10px,0) scale(1.04);} }
+.hero::after{
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at 30% 40%, black, transparent 70%);
+}
+.hero__molecule{ position:absolute; right:-80px; top:50%; transform: translateY(-50%); width:440px; opacity:.4; animation: float 9s ease-in-out infinite; }
+@keyframes float{ 0%,100%{ transform: translateY(-50%) translateY(0);} 50%{ transform: translateY(-50%) translateY(-18px);} }
+.hero__content{ position:relative; max-width:640px; }
+.hero h1{ font-size: clamp(1.9rem, 3.6vw, 2.65rem); margin-bottom:18px; }
+.hero h1 .accent{ color: var(--c-accent-light); }
+.hero p.lead{ font-size:1.02rem; color:#c3cbd8; max-width:540px; margin-bottom:28px; }
+.hero__ctas{ display:flex; gap:12px; flex-wrap:wrap; }
+.hero__scroll{ display:none; }
+@media (max-width:760px){
+  .hero{ padding:112px 0 56px; text-align:left; }
+  .hero__molecule{ width:280px; opacity:.25; right:-140px; }
+}
+
+/* Page hero (inner pages) */
+.page-hero{ background: var(--grad-hero); color:#fff; padding:120px 0 52px; position:relative; }
+.page-hero h1{ font-size: clamp(1.5rem, 2.6vw, 2rem); }
+.page-hero p{ color:#c3cbd8; }
+.breadcrumb{ display:flex; gap:8px; align-items:center; font-size:.85rem; color:#9aa5b6; margin-bottom:18px; }
+.breadcrumb a{ color:#c3cbd8; } .breadcrumb a:hover{ color:#fff; }
+
+/* ---------- Stats ---------- */
+.stats{ background: var(--c-bg-soft); color:#fff; padding:44px 0; }
+.stats .grid-4{ text-align:center; }
+.stat__value{ font-family:var(--font-head); font-size:2rem; font-weight:700; color:#fff; }
+.stat__label{ color:#9aa5b6; font-size:.9rem; margin-top:6px; }
+
+/* ---------- Split section ---------- */
+.split{ display:grid; grid-template-columns: 1fr 1fr; gap:44px; align-items:center; }
+@media (max-width:900px){ .split{ grid-template-columns:1fr; gap:36px; } }
+.split__visual{
+  border-radius: var(--radius); overflow:hidden; aspect-ratio: 4/3; position:relative;
+  background: linear-gradient(135deg, var(--c-accent-dark), var(--c-bg));
+}
+.split__visual svg{ position:absolute; inset:0; width:100%; height:100%; }
+
+/* ---------- Timeline ---------- */
+.timeline{ position:relative; max-width:760px; margin:0 auto; }
+.timeline::before{ content:''; position:absolute; left:20px; top:0; bottom:0; width:2px; background: var(--c-line); }
+.timeline__item{ position:relative; padding-left:64px; margin-bottom:44px; }
+.timeline__item::before{
+  content:''; position:absolute; left:12px; top:4px; width:18px; height:18px; border-radius:50%;
+  background: var(--c-accent); border:4px solid #fff; box-shadow:0 0 0 2px var(--c-accent);
+}
+.timeline__year{ font-family:var(--font-head); font-weight:700; color:var(--c-accent-dark); font-size:1.1rem; }
+.timeline__card{ background:#fff; border:1px solid var(--c-line); border-radius: var(--radius-sm); padding:18px 22px; margin-top:8px; box-shadow: var(--shadow-sm); }
+
+/* Wide-screen alternating variant */
+@media (min-width:820px){
+  .timeline--wide{ max-width:900px; }
+  .timeline--wide::before{ left:50%; margin-left:-1px; }
+  .timeline--wide .timeline__item{ width:50%; padding-left:0; margin-bottom:56px; }
+  .timeline--wide .timeline__item::before{ left:auto; }
+  .timeline--wide .timeline__item--left{ padding-right:52px; text-align:right; }
+  .timeline--wide .timeline__item--left::before{ right:-9px; }
+  .timeline--wide .timeline__item--right{ margin-left:50%; padding-left:52px; }
+  .timeline--wide .timeline__item--right::before{ left:-9px; }
+}
+
+/* ---------- Footer ---------- */
+.site-footer{ background: var(--c-bg); color:#aeb9c9; padding:52px 0 22px; position:relative; }
+.site-footer::before{ content:''; position:absolute; top:0; left:0; right:0; height:1px; background: linear-gradient(90deg, transparent, rgba(63,182,168,.4), transparent); }
+.footer__grid{ display:grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap:32px; margin-bottom:36px; }
+@media (max-width:900px){ .footer__grid{ grid-template-columns: 1fr 1fr; } }
+@media (max-width:560px){ .footer__grid{ grid-template-columns: 1fr; gap:32px; } }
+.site-footer h4{ color:#fff; font-size:.78rem; letter-spacing:.07em; text-transform:uppercase; margin-bottom:16px; }
+.site-footer li{ margin-bottom:9px; font-size:.88rem; }
+.site-footer li svg{ width:16px; height:16px; flex-shrink:0; margin-top:2px; }
+.site-footer a:hover{ color: var(--c-accent-light); }
+.footer__bottom{ border-top:1px solid rgba(255,255,255,.1); padding-top:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:.82rem; align-items:center; }
+.footer__social{ display:flex; gap:10px; }
+.footer__social a{ width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,.2); display:flex; align-items:center; justify-content:center; transition: all var(--transition); font-size:.72rem; font-weight:700; }
+.footer__social a:hover{ background: var(--c-accent); border-color: var(--c-accent); transform: translateY(-2px); }
+
+/* ---------- Forms ---------- */
+.form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:640px){ .form-grid{ grid-template-columns:1fr; } }
+.field{ display:flex; flex-direction:column; gap:6px; margin-bottom:16px; }
+.field label{ font-size:.85rem; font-weight:600; color: var(--c-ink); }
+.field input, .field select, .field textarea{
+  padding:11px 14px; border:1px solid var(--c-line); border-radius:8px; font-family:inherit; font-size:.92rem;
+  background:#fff; transition: border-color var(--transition), box-shadow var(--transition);
+}
+.field input:focus, .field select:focus, .field textarea:focus{
+  outline:none; border-color: var(--c-accent); box-shadow: 0 0 0 3px rgba(29,125,116,.15);
+}
+.field .error{ color:#c0392b; font-size:.8rem; display:none; }
+.field.has-error input, .field.has-error select, .field.has-error textarea{ border-color:#c0392b; }
+.field.has-error .error{ display:block; }
+.form-status{ padding:16px 18px; border-radius:10px; font-size:.9rem; margin-top:8px; display:none; }
+.form-status.success{ display:block; background:#e8f6f1; color:#1d7d74; }
+.form-status.error{ display:block; background:#fdecea; color:#c0392b; }
+.file-drop{ border:1.5px dashed var(--c-line); border-radius:10px; padding:24px; text-align:center; color: var(--c-ink-soft); font-size:.88rem; cursor:pointer; transition: border-color var(--transition); }
+.file-drop:hover{ border-color: var(--c-accent); }
+
+/* ---------- CTA band ---------- */
+.cta-band{ background: var(--grad-hero); color:#fff; text-align:center; padding:64px 0; }
+.cta-band h2{ font-size: clamp(1.35rem, 2.4vw, 1.8rem); max-width:680px; margin:0 auto 14px; }
+.cta-band .lead{ max-width:540px; margin:0 auto 24px; color:#c3cbd8; }
+.cta-band__btns{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+/* ---------- Location cards ---------- */
+.location-card{ border:1px solid var(--c-line); border-radius: var(--radius-sm); padding:20px; transition: box-shadow var(--transition), border-color var(--transition); }
+.location-card:hover{ box-shadow: var(--shadow-sm); border-color: var(--c-accent-light); }
+.location-card h4{ margin-bottom:10px; font-size:.98rem; }
+.location-card__row{ display:flex; gap:9px; align-items:flex-start; margin-bottom:8px; font-size:.86rem; color: var(--c-ink-soft); }
+.location-card__row svg{ width:14px; height:14px; flex-shrink:0; margin-top:3px; color: var(--c-accent); }
+
+/* Industry card variant — subtle wash differentiates from solution cards */
+.card--industry{ background: linear-gradient(180deg, #fff 0%, var(--c-surface-alt) 100%); }
+
+/* ---------- Product ---------- */
+.category-strip{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:48px; }
+.category-pill{ padding:8px 16px; border-radius:999px; border:1px solid var(--c-line); font-size:.83rem; font-weight:600; color: var(--c-ink-soft); transition: all var(--transition); }
+.category-pill:hover, .category-pill.is-active{ background: var(--c-accent); border-color: var(--c-accent); color:#fff; }
+.spec-table{ width:100%; border-collapse:collapse; margin-top:10px; }
+.spec-table td{ padding:12px 0; border-bottom:1px solid var(--c-line); font-size:.9rem; color: var(--c-ink-soft); vertical-align:top; }
+.spec-table td:first-child{ font-weight:600; color: var(--c-ink); width:200px; }
+@media (max-width:560px){
+  .spec-table, .spec-table tbody, .spec-table tr, .spec-table td{ display:block; width:100% !important; }
+  .spec-table tr{ padding:10px 0; border-bottom:1px solid var(--c-line); }
+  .spec-table td{ border-bottom:none; padding:2px 0; }
+}
+.note-box{ background: rgba(199,154,75,.1); border:1px solid rgba(199,154,75,.3); color:#8a6a24; padding:14px 18px; border-radius:10px; font-size:.86rem; }
+
+/* Team avatar ring */
+.team-avatar{ width:100px; height:100px; border-radius:50%; object-fit:cover; margin:0 auto 20px; background:#eee; padding:4px; border:2px solid var(--c-line); transition: border-color var(--transition); }
+.card:hover .team-avatar{ border-color: var(--c-accent); }
+
+.product-row{ display:flex; justify-content:space-between; align-items:center; gap:20px; padding:16px 0; border-bottom:1px solid var(--c-line); flex-wrap:wrap; }
+.product-row:last-child{ border-bottom:none; }
+.product-row h4{ margin-bottom:4px; }
+
+/* ---------- 404 ---------- */
+.error-page{ min-height:60vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:130px 24px 56px; }
+.error-page .code{ font-family: var(--font-head); font-size:4rem; font-weight:800; color: var(--c-accent); line-height:1; }
+
+/* ---------- misc ---------- */
+.text-center{ text-align:center; }
+.muted{ color: var(--c-ink-soft); }
+.section-head{ max-width:600px; margin:0 auto 40px; text-align:center; }
+.section-head.left{ margin:0 0 32px; text-align:left; }
+.skip-link{ position:absolute; left:-999px; top:0; background:#fff; padding:12px 18px; z-index:2000; }
+.skip-link:focus{ left:12px; top:12px; }
+:focus-visible{ outline:2px solid var(--c-accent); outline-offset:2px; }
+
+/* ---------- Typography utilities (replaces scattered inline font-size overrides) ---------- */
+.h-panel{ font-size:1.05rem; margin-bottom:.5em; }       /* two-column panel/section sub-heading */
+.h-card{ font-size:1rem; margin-bottom:.4em; }        /* card / grid-item heading */
+.h-card-lg{ font-size:1.15rem; margin-bottom:.4em; }       /* larger card heading, e.g. industry rows */
+.text-sm{ font-size:.92rem; }
+.text-xs{ font-size:.82rem; }
+
+/* ---------- SPA view routing (single-file build) ---------- */
+.view{ display:none; }
+.view.is-active{ display:block; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <!-- ============================== HOME ============================== -->
+  <section class="view is-active" id="view-home">
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero__molecule" viewBox="0 0 400 400" fill="none">
+      <circle cx="120" cy="120" r="8" fill="#3fb6a8"/><circle cx="240" cy="90" r="6" fill="#c79a4b"/>
+      <circle cx="300" cy="220" r="10" fill="#3fb6a8"/><circle cx="150" cy="260" r="7" fill="#fff" opacity=".5"/>
+      <circle cx="90" cy="300" r="5" fill="#c79a4b"/>
+      <line x1="120" y1="120" x2="240" y2="90" stroke="#3fb6a8" stroke-width="1.5" opacity=".5"/>
+      <line x1="240" y1="90" x2="300" y2="220" stroke="#3fb6a8" stroke-width="1.5" opacity=".5"/>
+      <line x1="300" y1="220" x2="150" y2="260" stroke="#c79a4b" stroke-width="1.5" opacity=".5"/>
+      <line x1="150" y1="260" x2="90" y2="300" stroke="#3fb6a8" stroke-width="1.5" opacity=".5"/>
+      <line x1="120" y1="120" x2="150" y2="260" stroke="#fff" stroke-width="1" opacity=".25"/>
+    </svg>
+    <div class="container hero__content reveal">
+      <div class="eyebrow">Industrial Surface Chemistry</div>
+      <h1>Engineering the surface that <span class="accent">protects everything</span> built on top of it.</h1>
+      <p class="lead">Veyron Chemtech formulates and manufactures industrial surface-treatment chemicals for metal-finishing lines across the manufacturing sector.</p>
+      <div class="hero__ctas">
+        <a href="#/products" class="btn btn--primary">Explore Our Solutions</a>
+        <a href="#/contact" class="btn btn--outline">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero__scroll">SCROLL<div class="line"></div></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container grid grid-4" id="statsGrid"></div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container split">
+      <div class="reveal">
+        <div class="eyebrow">Who We Are</div>
+        <h2>Formulation chemistry built around your process line, not a data sheet.</h2>
+        <p id="introText"></p>
+        <p>We manufacture the full chemistry stack for metal surface preparation — from initial degreasing through conversion coating and final passivation — supported by an in-house technical team.</p>
+        <a href="#/company/our-story" class="btn btn--outline-dark">Our Story</a>
+      </div>
+      <div class="split__visual reveal">
+        <svg viewBox="0 0 400 320" width="100%" height="100%">
+          <rect width="400" height="320" fill="#0e2a27"/>
+          <g stroke="#3fb6a8" stroke-width="1" opacity=".4">
+            <line x1="0" y1="40" x2="400" y2="40"/><line x1="0" y1="80" x2="400" y2="80"/>
+            <line x1="0" y1="120" x2="400" y2="120"/><line x1="0" y1="160" x2="400" y2="160"/>
+            <line x1="0" y1="200" x2="400" y2="200"/><line x1="0" y1="240" x2="400" y2="240"/>
+            <line x1="0" y1="280" x2="400" y2="280"/>
+          </g>
+          <circle cx="200" cy="160" r="70" fill="none" stroke="#c79a4b" stroke-width="2"/>
+          <circle cx="200" cy="160" r="40" fill="none" stroke="#fff" stroke-width="1" opacity=".6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Our Solutions</div>
+        <h2>A complete surface-treatment chemistry range</h2>
+        <p>Formulated systems covering every stage of the metal-finishing process.</p>
+      </div>
+      <div class="grid grid-4" id="solutionsGrid"></div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Industries We Serve</div>
+        <h2>Built for real production environments</h2>
+      </div>
+      <div class="grid grid-4" id="industriesGrid"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section section--alt">
+    <div class="container split">
+      <div class="split__visual reveal" style="order:2;">
+        <svg viewBox="0 0 400 320" width="100%" height="100%">
+          <rect width="400" height="320" fill="#12212c"/>
+          <path d="M40 260 L120 160 L180 200 L260 90 L360 150" stroke="#3fb6a8" stroke-width="3" fill="none"/>
+          <circle cx="260" cy="90" r="6" fill="#c79a4b"/>
+        </svg>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">Why Choose Us</div>
+        <h2>Technical depth, manufacturing discipline</h2>
+        <ul style="display:flex;flex-direction:column;gap:16px;">
+          <li><strong>Technical expertise:</strong> <span class="muted">direct engineering support during trials and line commissioning.</span></li>
+          <li><strong>Manufacturing capability:</strong> <span class="muted">batch-tested production built for consistent industrial supply.</span></li>
+          <li><strong>In-house R&D:</strong> <span class="muted">formulation development matched to customer process constraints.</span></li>
+          <li><strong>Responsive support:</strong> <span class="muted">technical queries handled by chemists, not a call centre.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Our Journey</div>
+        <h2>Milestones along the way</h2>
+      </div>
+      <div class="timeline" id="journeyTimeline"></div>
+      <div class="text-center" style="margin-top:24px;">
+        <a href="#/company/journey" class="btn btn--outline-dark btn--sm">View Full Journey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section class="section section--dark">
+    <div class="container split">
+      <div class="reveal">
+        <div class="eyebrow">Sustainability</div>
+        <h2>Chemistry that considers what happens after the process line</h2>
+        <p>We look at effluent load, energy use and safe handling as part of formulation — not as an afterthought.</p>
+        <a href="#/sustainability" class="btn btn--outline">Learn More</a>
+      </div>
+      <div class="split__visual reveal">
+        <svg viewBox="0 0 400 320" width="100%" height="100%">
+          <rect width="400" height="320" fill="#0b1a17"/>
+          <circle cx="200" cy="160" r="90" fill="none" stroke="#3fb6a8" stroke-width="1.5" opacity=".5"/>
+          <circle cx="200" cy="160" r="60" fill="none" stroke="#3fb6a8" stroke-width="1.5" opacity=".3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="eyebrow" style="justify-content:center;">Get In Touch</div>
+      <h2>Let's build better industrial solutions together.</h2>
+      <p class="lead">Tell us about your process line and we'll recommend a chemistry system to fit it.</p>
+      <div class="cta-band__btns">
+        <a href="#/contact" class="btn btn--primary">Send an Enquiry</a>
+        <a href="#/products" class="btn btn--outline">View Products</a>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!-- ============================ /HOME ============================== -->
+
+  <!-- ========================= COMPANY: OUR STORY ======================== -->
+  <section class="view" id="view-story">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <a href="#/company/our-story">Company</a> / <span>Our Story</span></div>
+        <h1>Our Story</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" style="max-width:760px;">
+        <p class="reveal" id="storyLong" style="font-size:1.1rem;"></p>
+        <div class="reveal" id="storyBlocks" style="margin-top:24px;"></div>
+      </div>
+    </section>
+    <section class="cta-band">
+      <div class="container">
+        <h2>Want to know more about our capabilities?</h2>
+        <div class="cta-band__btns"><a href="#/rnd" class="btn btn--primary">R&D & Infrastructure</a><a href="#/contact" class="btn btn--outline">Contact Us</a></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ======================= COMPANY: MISSION & VISION ==================== -->
+  <section class="view" id="view-mission">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <a href="#/company/our-story">Company</a> / <span>Mission & Vision</span></div>
+        <h1>Mission & Vision</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card reveal">
+          <div class="card__icon">&#127919;</div>
+          <h2 class="h-panel">Mission</h2>
+          <p id="missionText"></p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">&#128301;</div>
+          <h2 class="h-panel">Vision</h2>
+          <p id="visionText"></p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Our Values</div><h2>What guides how we work</h2></div>
+        <div class="grid grid-4" id="valuesGrid"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ========================= COMPANY: LEADERSHIP ========================= -->
+  <section class="view" id="view-leadership">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <a href="#/company/our-story">Company</a> / <span>Leadership</span></div>
+        <h1>Leadership</h1>
+        <p style="max-width:600px;">The team responsible for our technical direction and manufacturing standards.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3" id="teamGrid"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- =========================== COMPANY: JOURNEY =========================== -->
+  <section class="view" id="view-journey">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <a href="#/company/our-story">Company</a> / <span>Our Journey</span></div>
+        <h1>Our Journey</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="timeline" id="fullTimeline"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============================= PRODUCTS ============================== -->
+  <section class="view" id="view-products">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Products</span></div>
+        <h1>Surface Treatment Chemistry Range</h1>
+        <p style="max-width:600px;">Formulated systems for every stage of the metal-finishing process — from initial degreasing to final passivation and sealing.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3" id="categoryGrid"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ========================= PRODUCTS: CATEGORY ========================== -->
+  <section class="view" id="view-products-category">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <a href="#/products">Products</a> / <span id="crumbName">Category</span></div>
+        <h1 id="catName">Category</h1>
+        <p id="catSummary" style="max-width:600px;"></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="category-strip" id="categoryStrip"></div>
+        <div id="productList"></div>
+        <div id="emptyState" style="display:none;" class="text-center" style="padding:60px 0;">
+          <p>No products are listed in this category yet.</p>
+          <a href="#/contact" class="btn btn--outline-dark btn--sm">Ask Us Directly</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ========================= PRODUCTS: DETAIL ========================== -->
+  <section class="view" id="view-products-product">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb" id="crumbWrap"></div>
+        <h1 id="prodName">Product</h1>
+      </div>
+    </section>
+
+    <section class="section" id="prodOverviewSection">
+      <div class="container split">
+        <div class="reveal">
+          <div class="eyebrow">Technical Overview</div>
+          <h2>Overview</h2>
+          <p id="prodSummary"></p>
+          <table class="spec-table">
+            <tr><td>Application</td><td id="prodApplication"></td></tr>
+            <tr><td>Material Compatibility</td><td id="prodCompat"></td></tr>
+            <tr><td>Technical Data</td><td id="prodTech"></td></tr>
+          </table>
+          <div class="note-box" style="margin-top:20px;">Full technical data sheets, safety data sheets and dosage recommendations are available on request from our technical team.</div>
+          <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="#enquiry" class="btn btn--primary">Request Technical Information</a>
+            <a href="#enquiry" class="btn btn--outline-dark">Send Enquiry</a>
+          </div>
+        </div>
+        <div class="split__visual reveal">
+          <svg viewBox="0 0 400 320" width="100%" height="100%">
+            <rect width="400" height="320" fill="#0e2a27"/>
+            <circle cx="200" cy="160" r="70" fill="none" stroke="#3fb6a8" stroke-width="2"/>
+            <circle cx="200" cy="160" r="40" fill="none" stroke="#c79a4b" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="enquiry">
+      <div class="container" style="max-width:720px;">
+        <div class="section-head reveal">
+          <div class="eyebrow">Product Enquiry</div>
+          <h2>Request Technical Information</h2>
+        </div>
+        <form data-form="product-enquiry" novalidate class="reveal">
+          <div class="form-grid">
+            <div class="field"><label for="peName">Name *</label><input id="peName" name="name" required></div>
+            <div class="field"><label for="peCompany">Company *</label><input id="peCompany" name="company" required></div>
+            <div class="field"><label for="peEmail">Email *</label><input type="email" id="peEmail" name="email" required></div>
+            <div class="field"><label for="pePhone">Phone</label><input id="pePhone" name="phone"></div>
+          </div>
+          <div class="field">
+            <label for="peIndustry">Industry</label>
+            <select id="peIndustry" name="industry"><option value="">Select an industry</option></select>
+          </div>
+          <input type="hidden" name="product" id="peProduct">
+          <div class="field"><label for="peMessage">Message</label><textarea id="peMessage" name="message" rows="4"></textarea></div>
+          <button type="submit" class="btn btn--primary btn--block">Send Enquiry</button>
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============================= INDUSTRIES ============================= -->
+  <section class="view" id="view-industries">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Industries</span></div>
+        <h1>Industries We Serve</h1>
+        <p style="max-width:600px;">Our chemistry systems are configured to the real constraints of each industry's process line — not sold as one-size-fits-all.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div id="industryList"></div>
+      </div>
+    </section>
+    <section class="cta-band">
+      <div class="container">
+        <h2>Don't see your industry listed?</h2>
+        <p class="lead">Our chemistries are configurable — talk to our technical team about your specific process.</p>
+        <div class="cta-band__btns"><a href="#/contact" class="btn btn--primary">Contact Us</a></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ========================== R&D / INFRASTRUCTURE ======================== -->
+  <section class="view" id="view-rnd">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>R&D / Infrastructure</span></div>
+        <h1>Research & Manufacturing Infrastructure</h1>
+        <p style="max-width:620px;">From formulation to full-scale production — the capability behind every batch.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="card reveal">
+          <h3 class="h-card">Research & Development</h3>
+          <p>New chemistry is developed and trialled against real process parameters before it reaches production.</p></div>
+        <div class="card reveal">
+          <h3 class="h-card">Laboratory & Testing</h3>
+          <p>In-house testing supports formulation development and batch quality verification.</p></div>
+        <div class="card reveal">
+          <h3 class="h-card">Quality Control</h3>
+          <p>Defined quality checks are applied at each production stage before dispatch.</p></div>
+        <div class="card reveal">
+          <h3 class="h-card">Manufacturing</h3>
+          <p>Production is run at a scale built for consistent industrial-volume supply.</p></div>
+        <div class="card reveal">
+          <h3 class="h-card">Technical Support</h3>
+          <p>Our chemists support trials, commissioning and ongoing process troubleshooting on-site.</p></div>
+        <div class="card reveal">
+          <h3 class="h-card">Application Development</h3>
+          <p>Formulations are refined in collaboration with customers against their specific line requirements.</p></div>
+      </div>
+    </section>
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Our Locations</div><h2>Head office, plants & R&D centre</h2></div>
+        <div class="grid grid-2" id="locationGrid"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============================ SUSTAINABILITY =========================== -->
+  <section class="view" id="view-sustainability">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Sustainability</span></div>
+        <h1>Sustainability & Community</h1>
+        <p style="max-width:620px;">Responsible chemistry, safer plants, and the communities we operate in.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container grid grid-2" id="sustainGrid"></div>
+    </section>
+  </section>
+
+  <!-- ================================ CAREERS ============================== -->
+  <section class="view" id="view-careers">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Careers</span></div>
+        <h1>Careers at Veyron Chemtech</h1>
+        <p style="max-width:600px;">Join a technical team building the chemistry behind industrial manufacturing.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head left reveal"><div class="eyebrow">Current Openings</div><h2>Open Positions</h2></div>
+        <div id="jobList"></div>
+        <div id="jobEmpty" style="display:none;" class="text-center" style="padding:40px 0;">
+          <p>No current openings. Please check again later, or send your profile using the form below and we'll keep it on file.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="apply">
+      <div class="container" style="max-width:720px;">
+        <div class="section-head reveal"><div class="eyebrow">Apply</div><h2>Send Us Your Application</h2></div>
+        <form data-form="career-application" novalidate class="reveal" id="applyForm" enctype="multipart/form-data">
+          <div class="form-grid">
+            <div class="field"><label for="aName">Name *</label><input id="aName" name="name" required></div>
+            <div class="field"><label for="aEmail">Email *</label><input type="email" id="aEmail" name="email" required></div>
+            <div class="field"><label for="aPhone">Phone *</label><input id="aPhone" name="phone" required></div>
+            <div class="field"><label for="aExp">Experience (years)</label><input id="aExp" name="experience" type="number" min="0"></div>
+          </div>
+          <div class="field">
+            <label for="aPosition">Position *</label>
+            <select id="aPosition" name="position" required><option value="">Select a position</option></select>
+          </div>
+          <div class="field">
+            <label for="resume">Resume *</label>
+            <label class="file-drop" for="resume" id="fileDropLabel">Click to upload your resume (PDF, DOC — max 5MB)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required style="position:absolute;left:-9999px;">
+          </div>
+          <div class="field"><label for="aMessage">Message</label><textarea id="aMessage" name="message" rows="4"></textarea></div>
+          <button type="submit" class="btn btn--primary btn--block">Submit Application</button>
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================================ CONTACT ============================== -->
+  <section class="view" id="view-contact">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Contact</span></div>
+        <h1>Contact Us</h1>
+        <p style="max-width:600px;">Tell us about your process line — our technical team will get back to you.</p>
+        <div class="hero__ctas" style="margin-top:20px;">
+          <a id="callBtn" href="#" class="btn btn--outline btn--sm">Call Us</a>
+          <a id="waBtn" href="#" target="_blank" rel="noopener" class="btn btn--outline btn--sm">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split" style="align-items:flex-start;">
+        <div>
+          <h2 class="h-panel">Send an Enquiry</h2>
+          <form data-form="contact" novalidate class="reveal">
+            <div class="form-grid">
+              <div class="field"><label for="cName">Name *</label><input id="cName" name="name" required></div>
+              <div class="field"><label for="cCompany">Company</label><input id="cCompany" name="company"></div>
+              <div class="field"><label for="cEmail">Email *</label><input type="email" id="cEmail" name="email" required></div>
+              <div class="field"><label for="cPhone">Phone</label><input id="cPhone" name="phone"></div>
+            </div>
+            <div class="field"><label for="cSubject">Subject *</label><input id="cSubject" name="subject" required></div>
+            <div class="field"><label for="cMessage">Message *</label><textarea id="cMessage" name="message" rows="5" required></textarea></div>
+            <button type="submit" class="btn btn--primary btn--block">Send Enquiry</button>
+            <div class="form-status" role="status"></div>
+          </form>
+        </div>
+        <div>
+          <h2 class="h-panel">Business Hours</h2>
+          <p id="hoursText"></p>
+          <h2 class="h-panel" style="margin-top:28px;">Our Locations</h2>
+          <div style="display:flex; flex-direction:column; gap:16px;" id="locList"></div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================================ PRIVACY ============================== -->
+  <section class="view" id="view-privacy">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Privacy Policy</span></div>
+        <h1>Privacy Policy</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" style="max-width:760px;">
+        <p id="privacyText" class="reveal"></p>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================================= TERMS ================================ -->
+  <section class="view" id="view-terms">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#/">Home</a> / <span>Terms of Service</span></div>
+        <h1>Terms of Service</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container" style="max-width:760px;">
+        <p id="termsText" class="reveal"></p>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================================== 404 ================================= -->
+  <section class="view" id="view-404">
+    <section class="error-page">
+      <div>
+        <div class="code">404</div>
+        <h1>Page Not Found</h1>
+        <p style="max-width:420px; margin:0 auto 24px;">The page you're looking for doesn't exist or may have moved.</p>
+        <a href="#/" class="btn btn--primary">Back to Home</a>
+      </div>
+    </section>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script>
+/**
+ * =========================================================================
+ *  CENTRAL COMPANY CONFIGURATION
+ * =========================================================================
+ *  This is the ONLY file you should need to edit to rebrand this site.
+ *  Every page pulls its text, contact details, products, industries,
+ *  team members, milestones and stats from the objects below.
+ *
+ *  Replace every "XXXX" / bracketed placeholder with real information.
+ *  Nothing here is invented fact — until you fill it in, the site will
+ *  display honest placeholders instead of fabricated claims.
+ * =========================================================================
+ */
+
+const COMPANY = {
+  name: "Veyron Chemtech",              // TODO: replace with real legal/trade name
+  shortName: "Veyron",
+  tagline: "Precision Surface Chemistry for Modern Manufacturing",
+  descriptionShort:
+    "Veyron Chemtech formulates and manufactures industrial surface-treatment chemicals — degreasing, derusting, phosphating, conversion coating and corrosion-protection systems — for metal-finishing lines across the manufacturing sector.",
+  descriptionLong:
+    "We are an industrial chemical manufacturer focused on metal surface preparation and protection. Our formulation team works directly with production engineers to develop chemistries that fit real process lines, not just data sheets, and our plant is built to supply consistent, batch-tested product at industrial volume.",
+
+  logo: {
+    light: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxNjAgNDAiPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjAiIHI9IjgiIGZpbGw9IiMzZmI2YTgiLz48dGV4dCB4PSIzNCIgeT0iMjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj5WZXlyb248L3RleHQ+PC9zdmc+Cg==",   // TODO: replace with real logo (SVG/PNG, transparent)
+    dark: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxNjAgNDAiPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjAiIHI9IjgiIGZpbGw9IiMxZDdkNzQiLz48dGV4dCB4PSIzNCIgeT0iMjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMGQxNDIwIj5WZXlyb248L3RleHQ+PC9zdmc+Cg==",
+  },
+
+  contact: {
+    phone: "+91 XXXXX XXXXX",              // TODO
+    phoneHref: "tel:+91XXXXXXXXXX",
+    whatsapp: "+91 XXXXX XXXXX",           // TODO
+    whatsappHref: "https://wa.me/91XXXXXXXXXX",
+    email: "info@yourcompany.com",         // TODO
+    salesEmail: "sales@yourcompany.com",   // TODO
+    careersEmail: "careers@yourcompany.com", // TODO
+  },
+
+  hours: "Mon – Sat, 9:00 AM – 6:00 PM IST",
+
+  locations: [
+    {
+      id: "head-office",
+      label: "Head Office",
+      address: "[Add complete head office address]",
+      phone: "+91 XXXXX XXXXX",
+      email: "info@yourcompany.com",
+      mapsUrl: "https://maps.google.com/?q=", // TODO: paste real Google Maps link
+    },
+    {
+      id: "plant-1",
+      label: "Manufacturing Facility – Unit 1",
+      address: "[Add factory 1 address]",
+      phone: "+91 XXXXX XXXXX",
+      email: "plant1@yourcompany.com",
+      mapsUrl: "https://maps.google.com/?q=",
+    },
+    {
+      id: "plant-2",
+      label: "Manufacturing Facility – Unit 2",
+      address: "[Add factory 2 address]",
+      phone: "+91 XXXXX XXXXX",
+      email: "plant2@yourcompany.com",
+      mapsUrl: "https://maps.google.com/?q=",
+    },
+    {
+      id: "rnd",
+      label: "R&D Centre",
+      address: "[Add R&D address]",
+      phone: "+91 XXXXX XXXXX",
+      email: "rnd@yourcompany.com",
+      mapsUrl: "https://maps.google.com/?q=",
+    },
+  ],
+
+  social: {
+    linkedin: "#", // TODO
+    instagram: "#", // TODO
+  },
+
+  // Only include stats you can actually stand behind — these render as
+  // animated counters on the homepage.
+  stats: [
+    { id: "experience", value: 0, suffix: "+", label: "Years of Experience" },       // TODO
+    { id: "facilities", value: 0, suffix: "", label: "Manufacturing Facilities" },   // TODO
+    { id: "products", value: 0, suffix: "+", label: "Product Solutions" },           // TODO
+    { id: "industries", value: 0, suffix: "+", label: "Industries Served" },         // TODO
+  ],
+
+  mission:
+    "To formulate surface-treatment chemistry that measurably improves our customers' throughput, finish quality and process cost — backed by real technical support, not just a product catalogue.",
+  vision:
+    "To be the metal-finishing industry's most trusted formulation partner across the markets we serve, known equally for technical depth and manufacturing consistency.",
+  values: [
+    { title: "Quality", text: "Every batch is tested against defined process parameters before it leaves the plant." },
+    { title: "Technical Integrity", text: "We publish only what we can support with data — no invented specifications." },
+    { title: "Innovation", text: "Our R&D team develops chemistries around real customer process constraints." },
+    { title: "Sustainability", text: "We work to reduce effluent load, energy use and hazardous handling wherever the chemistry allows." },
+  ],
+
+  // Certifications — do NOT invent. Leave the array empty (renders nothing)
+  // until you can list real, verifiable certifications.
+  certifications: [
+    // { name: "[Certification name]", issuer: "[Issuing body]", year: "20XX" },
+  ],
+
+  // -------------------------------------------------------------------------
+  // OUR STORY — narrative placeholders. Nothing here is invented history;
+  // replace each field with real fact once supplied. Keep the [bracket]
+  // convention for anything still unconfirmed so it's easy to grep for.
+  // -------------------------------------------------------------------------
+  story: {
+    beginning: "[Placeholder — how and why the company was founded. Replace with real background once supplied.]",
+    growth: "[Placeholder — growth of manufacturing capacity and customer base.]",
+    technicalEvolution: "[Placeholder — how the R&D and product range developed over time.]",
+    today: "[Placeholder — present capabilities: plants, R&D centre, product range, customer footprint.]",
+    future: "[Placeholder — forward-looking vision for growth and technical development.]",
+  },
+
+  // -------------------------------------------------------------------------
+  // SUSTAINABILITY / COMMUNITY — avoid exaggerated environmental claims.
+  // The first four are reasonable general commitments for a chemical
+  // manufacturer to state; replace the wording with your actual practice.
+  // The last two are intentionally blank placeholders — do not fill them
+  // with invented programmes or goals.
+  // -------------------------------------------------------------------------
+  sustainability: [
+    { title: "Environmental Responsibility", text: "We consider effluent load and treatability during formulation, not only performance." },
+    { title: "Green Chemistry", text: "Where technically viable, we evaluate lower-hazard alternatives to legacy chemistries." },
+    { title: "Responsible Manufacturing", text: "Our production processes follow defined handling and storage protocols for hazardous inputs." },
+    { title: "Employee Safety", text: "Plant staff are trained on safe handling procedures for the chemistries we manufacture." },
+    { title: "Community Initiatives", text: "[Placeholder — describe any real community programmes once details are supplied.]" },
+    { title: "Future Goals", text: "[Placeholder — describe specific, measurable sustainability goals once defined.]" },
+  ],
+
+  // Legal text — placeholders only. Have counsel review before publishing.
+  legal: {
+    privacy: "[Placeholder — replace with your actual privacy policy covering what data is collected via this site's forms, how it is stored, who it is shared with, and how users can request deletion. Consult legal counsel before publishing.]",
+    terms: "[Placeholder — replace with your actual terms of service governing use of this website. Consult legal counsel before publishing.]",
+  },
+};
+
+// ---------------------------------------------------------------------------
+// PRODUCT CATEGORIES + PRODUCTS
+// ---------------------------------------------------------------------------
+// Do NOT invent chemical composition, pH, concentration, temperature or
+// performance claims. Where real data isn't supplied yet, the site shows:
+// "Technical information available on request."
+const PRODUCT_CATEGORIES = [
+  {
+    slug: "degreasing",
+    name: "Degreasing Solutions",
+    summary: "Alkaline and solvent-based cleaners for removing oil, grease and buffing compounds prior to further treatment.",
+    icon: "droplet",
+    products: [
+      {
+        slug: "degrease-a1",
+        name: "[Product Name — Degreaser A1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Pre-treatment cleaning stage, spray or immersion.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+  {
+    slug: "derusting",
+    name: "Derusting Solutions",
+    summary: "Acid-based systems for removing rust, scale and oxide layers from ferrous substrates.",
+    icon: "shield",
+    products: [
+      {
+        slug: "derust-b1",
+        name: "[Product Name — Derusting B1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Immersion derusting stage.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+  {
+    slug: "phosphating",
+    name: "Phosphating Solutions",
+    summary: "Zinc and iron phosphate conversion systems that build a paint- or oil-receptive base layer.",
+    icon: "layers",
+    products: [
+      {
+        slug: "phos-c1",
+        name: "[Product Name — Phosphate C1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Conversion coating stage prior to painting.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+  {
+    slug: "conversion-coatings",
+    name: "Conversion Coatings",
+    summary: "Non-phosphate and specialty conversion coating chemistries for adhesion and corrosion resistance.",
+    icon: "grid",
+    products: [
+      {
+        slug: "conv-d1",
+        name: "[Product Name — Conversion D1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Pre-paint conversion stage.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+  {
+    slug: "passivation",
+    name: "Passivation",
+    summary: "Chromate and trivalent passivation systems for enhanced corrosion resistance on treated surfaces.",
+    icon: "hexagon",
+    products: [
+      {
+        slug: "pass-e1",
+        name: "[Product Name — Passivation E1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Final passivation stage.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+  {
+    slug: "sealers",
+    name: "Sealers",
+    summary: "Sealing chemistries applied after conversion coating to close porosity and extend corrosion life.",
+    icon: "lock",
+    products: [
+      {
+        slug: "seal-f1",
+        name: "[Product Name — Sealer F1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Post-conversion sealing stage.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+  {
+    slug: "specialty-solutions",
+    name: "Specialty Solutions",
+    summary: "Custom-formulated chemistries developed against a specific customer process requirement.",
+    icon: "flask",
+    products: [
+      {
+        slug: "spec-g1",
+        name: "[Product Name — Specialty G1]",
+        summary: "Short one-line description of this product's role in the line.",
+        application: "Application-specific — details on request.",
+        compatibility: "Technical information available on request.",
+        technical: "Technical information available on request.",
+      },
+    ],
+  },
+];
+
+// ---------------------------------------------------------------------------
+// INDUSTRIES
+// ---------------------------------------------------------------------------
+const INDUSTRIES = [
+  {
+    slug: "automotive",
+    name: "Automotive",
+    icon: "car",
+    problem: "Automotive components demand consistent, high-volume surface preparation before painting or plating.",
+    solution: "Degreasing, phosphating and conversion coating lines matched to high-throughput automotive process cells.",
+  },
+  {
+    slug: "appliances",
+    name: "Appliances",
+    icon: "box",
+    problem: "Appliance sheet metal needs a uniform, paint-ready surface with reliable corrosion resistance.",
+    solution: "Conversion coating and sealing systems suited to continuous appliance-panel lines.",
+  },
+  {
+    slug: "metal-forming",
+    name: "Metal Forming",
+    icon: "tool",
+    problem: "Forming and stamping operations require effective residual-oil removal between process stages.",
+    solution: "Degreasing and derusting chemistries formulated for inter-stage cleaning.",
+  },
+  {
+    slug: "engineering",
+    name: "General Engineering",
+    icon: "settings",
+    problem: "Engineering components vary widely in substrate and finish requirement.",
+    solution: "A modular product range that can be configured to varied engineering process lines.",
+  },
+  {
+    slug: "aluminium",
+    name: "Aluminium",
+    icon: "layers",
+    problem: "Aluminium substrates need chemistry specifically suited to non-ferrous surface behaviour.",
+    solution: "Aluminium-specific cleaning and conversion chemistries — details available on request.",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// LEADERSHIP — do not invent people. Replace or remove placeholders.
+// ---------------------------------------------------------------------------
+const TEAM = [
+  {
+    name: "[Name Placeholder]",
+    designation: "[Designation Placeholder]",
+    bio: "Short professional biography to be supplied.",
+    photo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNlZWYxZjYiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSI4MCIgcj0iMzYiIGZpbGw9IiNjN2NlZGIiLz48cmVjdCB4PSI0MCIgeT0iMTMwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiByeD0iMzAiIGZpbGw9IiNjN2NlZGIiLz48L3N2Zz4K",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// COMPANY JOURNEY — do not invent history. Replace placeholders with fact.
+// ---------------------------------------------------------------------------
+const JOURNEY = [
+  { year: "20XX", milestone: "[Milestone placeholder — e.g. company founded]" },
+  { year: "20XX", milestone: "[Milestone placeholder — e.g. first manufacturing facility commissioned]" },
+  { year: "20XX", milestone: "[Milestone placeholder — e.g. R&D centre established]" },
+  { year: "20XX", milestone: "[Milestone placeholder — e.g. current capability]" },
+];
+
+// ---------------------------------------------------------------------------
+// CAREERS — sample structure; replace with live openings or leave empty.
+// ---------------------------------------------------------------------------
+const CAREERS = [
+  // { slug: "process-chemist", title: "Process Chemist", location: "[City]", type: "Full-time",
+  //   description: "Role description here.", requirements: ["Requirement 1", "Requirement 2"] },
+];
+/* =========================================================================
+   VEYRON CHEMTECH — SINGLE-FILE SPA APPLICATION LOGIC
+   Combines the former assets/js/data.js (above) and assets/js/main.js
+   (below) into one file, plus a small hash-based router so every page of
+   the original multi-page site is reachable from this one index.html.
+   ========================================================================= */
+
+const NAV_ITEMS = [
+  { label: "Home", href: "#/", navkey: "home" },
+  {
+    label: "Company", navkey: "company",
+    children: [
+      { label: "Our Story", href: "#/company/our-story", navkey: "story" },
+      { label: "Mission & Vision", href: "#/company/mission-vision", navkey: "mission" },
+      { label: "Leadership", href: "#/company/leadership", navkey: "leadership" },
+      { label: "Our Journey", href: "#/company/journey", navkey: "journey" },
+    ],
+  },
+  { label: "Products", href: "#/products", navkey: "products" },
+  { label: "Industries", href: "#/industries", navkey: "industries" },
+  { label: "R&D / Infrastructure", href: "#/rnd", navkey: "rnd" },
+  { label: "Sustainability", href: "#/sustainability", navkey: "sustainability" },
+  { label: "Careers", href: "#/careers", navkey: "careers" },
+  { label: "Contact", href: "#/contact", navkey: "contact" },
+];
+
+// Maps a concrete view name to the nav item it should highlight
+const VIEW_GROUP = {
+  home: "home",
+  story: "company", mission: "company", leadership: "company", journey: "company",
+  products: "products", "products-category": "products", "products-product": "products",
+  industries: "industries", rnd: "rnd", sustainability: "sustainability",
+  careers: "careers", contact: "contact",
+  privacy: null, terms: null, "404": null,
+};
+
+const ICONS = {
+  chevron: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>`,
+  pin: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+  phone: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2z"/></svg>`,
+  mail: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>`,
+};
+
+/* =========================================================================
+   PLACEHOLDER-SAFE DISPLAY HELPERS
+   The centralized data object (COMPANY, below) intentionally ships with
+   editable placeholder values (e.g. "+91 XXXXX XXXXX", "[Add complete
+   head office address]") so real details can be dropped in later. Those
+   raw placeholder strings must never reach the visible page — this helper
+   detects them and swaps in a clean, neutral label instead. Once you
+   replace a placeholder in COMPANY with a real value, this stops applying
+   automatically and the real value renders normally.
+   ========================================================================= */
+function isPlaceholderValue(value){
+  if(!value) return true;
+  return /\[.*\]|XXXX|yourcompany\.com/i.test(value);
+}
+function safeText(value, fallback){
+  return isPlaceholderValue(value) ? fallback : value;
+}
+/* Renders an address/phone/email row: a real value becomes a live link
+   (tel:/mailto:) or plain text for an address; a placeholder value renders
+   as a muted, clearly-neutral label with no link, so nothing fake is ever
+   clickable or shown as if it were real. */
+function contactRow(icon, value, fallback, hrefPrefix){
+  const isPlaceholder = isPlaceholderValue(value);
+  const label = isPlaceholder ? fallback : value;
+  const content = (!isPlaceholder && hrefPrefix)
+    ? `<a href="${hrefPrefix}${value.replace(/\s/g,'')}">${label}</a>`
+    : `<span${isPlaceholder ? ' class="muted"' : ''}>${label}</span>`;
+  return `<div class="location-card__row">${icon}${content}</div>`;
+}
+
+/* Card / category icon set — original line-icon set (not copied from any source) */
+const ICONSET = {
+  droplet:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2s7 7.5 7 12a7 7 0 1 1-14 0c0-4.5 7-12 7-12z"/></svg>`,
+  shield:   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z"/></svg>`,
+  layers:   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>`,
+  grid:     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>`,
+  hexagon:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7l9-5z"/></svg>`,
+  lock:     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></svg>`,
+  flask:    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L3 20a1 1 0 0 0 1 2h16a1 1 0 0 0 1-2L15 8V2"/><path d="M9 2h6"/><path d="M6 16h12"/></svg>`,
+  car:      `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l2-6a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 6"/><rect x="2" y="13" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>`,
+  box:      `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>`,
+  tool:     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L2 19v3h3l7.3-7.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"/></svg>`,
+  settings: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>`,
+  beaker:   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V2"/><path d="M8.5 14h7"/></svg>`,
+  leaf:     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 21C6 21 3 16 3 11c7 0 12 3 12 8-3 0-6-2-7-5"/><path d="M21 3c-9 0-14 5-14 13"/></svg>`,
+};
+
+function renderHeader(){
+  const mount = document.getElementById('site-header');
+  if(!mount) return;
+
+  const linksHtml = NAV_ITEMS.map(item => {
+    if(item.children){
+      return `<li class="nav__item">
+        <button class="nav__link" type="button" data-navkey="${item.navkey}" aria-haspopup="true" aria-expanded="false">${item.label} ${ICONS.chevron}</button>
+        <div class="nav__dropdown">
+          ${item.children.map(c => `<a href="${c.href}" data-navkey="${c.navkey}">${c.label}</a>`).join('')}
+        </div>
+      </li>`;
+    }
+    return `<li class="nav__item"><a class="nav__link" href="${item.href}" data-navkey="${item.navkey}">${item.label}</a></li>`;
+  }).join('');
+
+  mount.innerHTML = `
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="#/" class="nav__logo" aria-label="${COMPANY.name} home">
+        <span class="dot"></span> ${COMPANY.name}
+      </a>
+      <ul class="nav__links">${linksHtml}</ul>
+      <div class="nav__cta">
+        <a href="${COMPANY.contact.phoneHref}" class="btn btn--outline btn--sm">${ICONS.phone} Call Us</a>
+        <a href="#/contact" class="btn btn--primary btn--sm">Send an Enquiry</a>
+        <button class="nav__toggle" id="mobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__top">
+      <span class="nav__logo"><span class="dot"></span> ${COMPANY.name}</span>
+      <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-menu__links">
+      ${NAV_ITEMS.map(item => item.children ? `
+        <div class="mobile-menu__item" data-navkey="${item.navkey}">
+          <button type="button">${item.label} ${ICONS.chevron}</button>
+          <div class="mobile-menu__sub">
+            ${item.children.map(c => `<a href="${c.href}" data-navkey="${c.navkey}">${c.label}</a>`).join('')}
+          </div>
+        </div>` : `<div class="mobile-menu__item"><a href="${item.href}" data-navkey="${item.navkey}">${item.label}</a></div>`
+      ).join('')}
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="${COMPANY.contact.phoneHref}" class="btn btn--outline btn--block">${ICONS.phone} Call Us</a>
+      <a href="#/contact" class="btn btn--primary btn--block">Send an Enquiry</a>
+    </div>
+  </div>`;
+
+  wireHeader();
+}
+
+function wireHeader(){
+  const header = document.getElementById('siteHeader');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive:true });
+
+  document.querySelectorAll('.nav__item').forEach(item => {
+    const btn = item.querySelector('.nav__link');
+    if(item.querySelector('.nav__dropdown')){
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.nav__item').forEach(i => i.classList.remove('is-open'));
+        item.classList.toggle('is-open', !isOpen);
+      });
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if(!e.target.closest('.nav__item')) document.querySelectorAll('.nav__item').forEach(i => i.classList.remove('is-open'));
+  });
+
+  const toggle = document.getElementById('mobileToggle');
+  const menu = document.getElementById('mobileMenu');
+  const close = document.getElementById('mobileClose');
+  toggle?.addEventListener('click', () => { menu.classList.add('is-open'); document.body.style.overflow='hidden'; });
+  close?.addEventListener('click', () => { menu.classList.remove('is-open'); document.body.style.overflow=''; });
+  menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('is-open'); document.body.style.overflow=''; }));
+  menu?.querySelectorAll('.mobile-menu__item > button').forEach(b => {
+    b.addEventListener('click', () => b.parentElement.classList.toggle('is-open'));
+  });
+}
+
+/* Toggles active/current-page styling on both the desktop nav and the
+   mobile drawer, without re-rendering (and so without losing listeners). */
+function updateActiveNav(view){
+  const group = VIEW_GROUP[view] || null;
+  document.querySelectorAll('[data-navkey]').forEach(el => {
+    const key = el.dataset.navkey;
+    const isMatch = (key === view) || (key === group);
+    el.classList.toggle('is-active', isMatch);
+    if(el.tagName === 'A'){
+      if(isMatch) el.setAttribute('aria-current', 'page'); else el.removeAttribute('aria-current');
+    }
+    if(isMatch && el.classList.contains('mobile-menu__item')){
+      el.classList.add('is-open');
+    }
+  });
+}
+
+function renderFooter(){
+  const mount = document.getElementById('site-footer');
+  if(!mount) return;
+  const head = COMPANY.locations.find(l => l.id === 'head-office');
+  mount.innerHTML = `
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="#/" class="nav__logo" style="margin-bottom:16px;"><span class="dot"></span> ${COMPANY.name}</a>
+          <p style="max-width:320px;">${COMPANY.descriptionShort}</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#/company/our-story">Our Story</a></li>
+            <li><a href="#/products">Products</a></li>
+            <li><a href="#/industries">Industries</a></li>
+            <li><a href="#/careers">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            ${PRODUCT_CATEGORIES.slice(0,4).map(c => `<li><a href="#/products/category/${c.slug}">${c.name}</a></li>`).join('')}
+            <li><a href="#/products">View All &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li style="display:flex;gap:8px;">${ICONS.pin}${isPlaceholderValue(head.address) ? `<span class="muted">Head office address to be added</span>` : `<span>${head.address}</span>`}</li>
+            <li style="display:flex;gap:8px;">${ICONS.phone}${isPlaceholderValue(COMPANY.contact.phone) ? `<span class="muted">Phone number to be added</span>` : `<a href="${COMPANY.contact.phoneHref}">${COMPANY.contact.phone}</a>`}</li>
+            <li style="display:flex;gap:8px;">${ICONS.mail}${isPlaceholderValue(COMPANY.contact.email) ? `<span class="muted">Email address to be added</span>` : `<a href="mailto:${COMPANY.contact.email}">${COMPANY.contact.email}</a>`}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; ${new Date().getFullYear()} ${COMPANY.name}. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="${COMPANY.social.linkedin}" aria-label="LinkedIn">in</a>
+          <a href="${COMPANY.social.instagram}" aria-label="Instagram">ig</a>
+        </div>
+        <span><a href="#/privacy">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#/terms">Terms</a></span>
+      </div>
+    </div>
+  </footer>`;
+}
+
+/* ---------------- Scroll reveal ---------------- */
+function initReveal(){
+  const els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(el => el.classList.add('is-visible')); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('is-visible'); io.unobserve(entry.target); } });
+  }, { threshold: .15 });
+  els.forEach(el => io.observe(el));
+}
+
+/* ---------------- Animated counters ---------------- */
+function initCounters(){
+  const els = document.querySelectorAll('[data-counter]');
+  if(!els.length) return;
+  const animate = (el) => {
+    const target = Number(el.dataset.counter) || 0;
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now){
+      const p = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if(p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  };
+  if(!('IntersectionObserver' in window)){ els.forEach(animate); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting){ animate(entry.target); io.unobserve(entry.target); } });
+  }, { threshold:.4 });
+  els.forEach(el => io.observe(el));
+}
+
+/* ---------------- Forms ----------------
+   Submission logic is intentionally isolated in submitFormData() so it can
+   be pointed at a real backend / email service (e.g. Formspree, an API
+   route, AWS SES) without touching validation or UI code. Right now it
+   only simulates success — no data is actually sent anywhere, and the UI
+   is written so it is easy to make that fact visible if you don't wire a
+   backend before launch. */
+async function submitFormData(formName, payload){
+  console.info(`[${formName}] payload ready for backend integration:`, payload);
+  // TODO: replace with a real request, e.g.:
+  // const res = await fetch('/api/enquiry', { method:'POST', body: JSON.stringify(payload) });
+  // return res.ok;
+  await new Promise(r => setTimeout(r, 700));
+  return true;
+}
+
+function initForms(){
+  document.querySelectorAll('form[data-form]').forEach(form => {
+    const statusEl = form.querySelector('.form-status');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      let valid = true;
+      form.querySelectorAll('[required]').forEach(input => {
+        const field = input.closest('.field');
+        const ok = input.type === 'checkbox' ? input.checked : input.value.trim().length > 0;
+        field?.classList.toggle('has-error', !ok);
+        if(!ok) valid = false;
+      });
+      if(!valid){
+        if(statusEl){ statusEl.textContent = 'Please fill in all required fields.'; statusEl.className = 'form-status error'; }
+        return;
+      }
+      const submitBtn = form.querySelector('[type="submit"]');
+      const originalLabel = submitBtn.textContent;
+      submitBtn.disabled = true; submitBtn.textContent = 'Sending…';
+      const payload = Object.fromEntries(new FormData(form).entries());
+      try{
+        const ok = await submitFormData(form.dataset.form, payload);
+        if(ok){
+          if(statusEl){ statusEl.textContent = "Thank you — we've received your message and will be in touch shortly."; statusEl.className = 'form-status success'; }
+          form.reset();
+        } else {
+          throw new Error('failed');
+        }
+      }catch(err){
+        if(statusEl){ statusEl.textContent = 'Something went wrong sending this form. Please try again or contact us directly.'; statusEl.className = 'form-status error'; }
+      }finally{
+        submitBtn.disabled = false; submitBtn.textContent = originalLabel;
+      }
+    });
+  });
+}
+
+/* ---------------- Timeline renderer (shared by homepage + journey view) ---------------- */
+function renderTimelineInto(containerId, items){
+  const mount = document.getElementById(containerId);
+  if(!mount) return;
+  mount.classList.add('timeline', 'timeline--wide');
+  mount.innerHTML = items.map((j, idx) => `
+    <div class="timeline__item ${idx % 2 === 0 ? 'timeline__item--left' : 'timeline__item--right'} reveal">
+      <div class="timeline__year">${j.year}</div>
+      <div class="timeline__card"><p style="margin:0;">${j.milestone}</p></div>
+    </div>`).join('');
+}
+
+/* =========================================================================
+   VIEW RENDER FUNCTIONS
+   Static views are rendered once at startup. The two product views depend
+   on the URL (category/product slug) so they re-render on every visit.
+   ========================================================================= */
+
+function renderHomeView(){
+  document.querySelector('#view-home .hero p.lead').textContent = COMPANY.descriptionShort;
+  document.getElementById('introText').textContent = COMPANY.descriptionLong;
+
+  document.getElementById('statsGrid').innerHTML = COMPANY.stats.map(s => `
+    <div class="reveal">
+      <div class="stat__value" data-counter="${s.value}" data-suffix="${s.suffix}">0</div>
+      <div class="stat__label">${s.label}</div>
+    </div>`).join('');
+
+  document.getElementById('solutionsGrid').innerHTML = PRODUCT_CATEGORIES.map(c => `
+    <div class="card reveal">
+      <div class="card__icon">${ICONSET[c.icon] || ICONSET.flask}</div>
+      <h3 class="h-card">${c.name}</h3>
+      <p class="text-sm">${c.summary}</p>
+      <a href="#/products/category/${c.slug}" class="btn btn--sm btn--outline-dark">Learn More</a>
+    </div>`).join('');
+
+  document.getElementById('industriesGrid').innerHTML = INDUSTRIES.map(i => `
+    <div class="card card--industry reveal">
+      <div class="card__icon">${ICONSET[i.icon] || ICONSET.settings}</div>
+      <h3 class="h-card">${i.name}</h3>
+      <p class="text-sm">${i.solution}</p>
+    </div>`).join('');
+
+  renderTimelineInto('journeyTimeline', JOURNEY);
+}
+
+function renderStoryView(){
+  document.getElementById('storyLong').textContent = COMPANY.descriptionLong;
+  const storyLabels = { beginning: "Beginning", growth: "Growth", technicalEvolution: "Technical Evolution", today: "Where We Are Today", future: "Looking Ahead" };
+  document.getElementById('storyBlocks').innerHTML = Object.entries(storyLabels).map(([key, label]) => `
+    <h3>${label}</h3><p>${COMPANY.story[key]}</p>`).join('');
+}
+
+function renderMissionView(){
+  document.getElementById('missionText').textContent = COMPANY.mission;
+  document.getElementById('visionText').textContent = COMPANY.vision;
+  document.getElementById('valuesGrid').innerHTML = COMPANY.values.map(v => `
+    <div class="card reveal"><h3 class="h-card">${v.title}</h3><p class="text-sm">${v.text}</p></div>`).join('');
+}
+
+function renderLeadershipView(){
+  document.getElementById('teamGrid').innerHTML = TEAM.map(t => `
+    <div class="card reveal text-center">
+      <img src="${t.photo}" alt="${t.name}" class="team-avatar" onerror="this.style.display='none'">
+      <h3 class="h-card">${t.name}</h3>
+      <p class="muted" style="font-weight:600;font-size:.85rem;">${t.designation}</p>
+      <p class="text-sm">${t.bio}</p>
+    </div>`).join('');
+}
+
+function renderJourneyView(){
+  renderTimelineInto('fullTimeline', JOURNEY);
+}
+
+function renderProductsView(){
+  document.getElementById('categoryGrid').innerHTML = PRODUCT_CATEGORIES.map(c => `
+    <div class="card reveal">
+      <div class="card__icon">${ICONSET[c.icon] || ICONSET.flask}</div>
+      <h3 class="h-card" style="font-size:1.1rem;">${c.name}</h3>
+      <p>${c.summary}</p>
+      <p class="muted text-xs">${c.products.length} product${c.products.length===1?'':'s'}</p>
+      <a href="#/products/category/${c.slug}" class="btn btn--sm btn--outline-dark">View Products</a>
+    </div>`).join('');
+}
+
+function renderProductsCategoryView(slug){
+  const cat = PRODUCT_CATEGORIES.find(c => c.slug === slug);
+
+  document.getElementById('categoryStrip').innerHTML = PRODUCT_CATEGORIES.map(c => `
+    <a href="#/products/category/${c.slug}" class="category-pill ${c.slug===slug?'is-active':''}">${c.name}</a>`).join('');
+
+  const emptyEl = document.getElementById('emptyState');
+  if(!cat){
+    document.getElementById('catName').textContent = 'Category Not Found';
+    document.getElementById('crumbName').textContent = 'Not Found';
+    document.getElementById('catSummary').textContent = '';
+    document.getElementById('productList').innerHTML = '';
+    emptyEl.style.display = 'block';
+    return;
+  }
+
+  document.title = cat.name + ' | Veyron Chemtech';
+  document.getElementById('catName').textContent = cat.name;
+  document.getElementById('crumbName').textContent = cat.name;
+  document.getElementById('catSummary').textContent = cat.summary;
+
+  if(!cat.products.length){
+    document.getElementById('productList').innerHTML = '';
+    emptyEl.style.display = 'block';
+  } else {
+    emptyEl.style.display = 'none';
+    document.getElementById('productList').innerHTML = cat.products.map(p => `
+      <div class="product-row reveal">
+        <div>
+          <h4>${p.name}</h4>
+          <p style="margin:0;">${p.summary}</p>
+        </div>
+        <a href="#/products/product/${cat.slug}/${p.slug}" class="btn btn--sm btn--outline-dark">View Details</a>
+      </div>`).join('');
+  }
+  initReveal();
+}
+
+function renderProductsProductView(catSlug, prodSlug){
+  const cat = PRODUCT_CATEGORIES.find(c => c.slug === catSlug);
+  const prod = cat?.products.find(p => p.slug === prodSlug);
+  const overviewSection = document.getElementById('prodOverviewSection');
+  const enquirySection = document.getElementById('enquiry');
+
+  const peIndustry = document.getElementById('peIndustry');
+  if(peIndustry && peIndustry.options.length <= 1){
+    peIndustry.innerHTML += INDUSTRIES.map(i => `<option value="${i.name}">${i.name}</option>`).join('');
+  }
+
+  if(!cat || !prod){
+    document.title = 'Product Not Found | Veyron Chemtech';
+    document.getElementById('prodName').textContent = 'Product Not Found';
+    document.getElementById('crumbWrap').innerHTML = `<a href="#/">Home</a> / <a href="#/products">Products</a> / <span>Not Found</span>`;
+    if(overviewSection) overviewSection.style.display = 'none';
+    if(enquirySection) enquirySection.style.display = 'none';
+    return;
+  }
+
+  if(overviewSection) overviewSection.style.display = '';
+  if(enquirySection) enquirySection.style.display = '';
+
+  document.title = prod.name + ' | Veyron Chemtech';
+  document.getElementById('crumbWrap').innerHTML = `<a href="#/">Home</a> / <a href="#/products">Products</a> / <a href="#/products/category/${cat.slug}">${cat.name}</a> / <span>${prod.name}</span>`;
+  document.getElementById('prodName').textContent = prod.name;
+  document.getElementById('prodSummary').textContent = prod.summary;
+  document.getElementById('prodApplication').textContent = prod.application;
+  document.getElementById('prodCompat').textContent = prod.compatibility;
+  document.getElementById('prodTech').textContent = prod.technical;
+  document.getElementById('peProduct').value = prod.name;
+  initReveal();
+}
+
+function renderIndustriesView(){
+  document.getElementById('industryList').innerHTML = INDUSTRIES.map((i, idx) => `
+    <div class="split reveal" style="padding:48px 0; border-bottom:1px solid var(--c-line);">
+      <div style="${idx % 2 ? 'order:2;' : ''}">
+        <div class="card__icon">${ICONSET[i.icon] || ICONSET.settings}</div>
+        <h2 class="h-card-lg">${i.name}</h2>
+        <p><strong>The challenge:</strong> ${i.problem}</p>
+        <p><strong>Our approach:</strong> ${i.solution}</p>
+        <a href="#/products" class="btn btn--sm btn--outline-dark">View Relevant Products</a>
+      </div>
+      <div class="split__visual">
+        <svg viewBox="0 0 400 320" width="100%" height="100%"><rect width="400" height="320" fill="#0e2a27"/>
+        <circle cx="200" cy="160" r="60" fill="none" stroke="#3fb6a8" stroke-width="2"/></svg>
+      </div>
+    </div>`).join('');
+}
+
+function renderRndView(){
+  document.getElementById('locationGrid').innerHTML = COMPANY.locations.map(l => {
+    const hasMaps = l.mapsUrl && !/\?q=$/.test(l.mapsUrl);
+    return `
+    <div class="location-card reveal">
+      <h4>${l.label}</h4>
+      ${contactRow(ICONS.pin, l.address, 'Address to be added', null)}
+      ${contactRow(ICONS.phone, l.phone, 'Phone number to be added', 'tel:')}
+      ${contactRow(ICONS.mail, l.email, 'Email address to be added', 'mailto:')}
+      ${hasMaps ? `<a href="${l.mapsUrl}" target="_blank" rel="noopener" class="btn btn--sm btn--outline-dark" style="margin-top:10px;">Open in Google Maps</a>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function renderSustainabilityView(){
+  document.getElementById('sustainGrid').innerHTML = COMPANY.sustainability.map(s => `
+    <div class="card reveal">
+      <h3 class="h-card">${s.title}</h3>
+      <p>${s.text}</p>
+    </div>`).join('');
+}
+
+function renderCareersView(){
+  const posSelect = document.getElementById('aPosition');
+  if(CAREERS.length){
+    document.getElementById('jobList').innerHTML = CAREERS.map(j => `
+      <div class="product-row reveal">
+        <div><h4>${j.title}</h4><p style="margin:0;">${j.location} &middot; ${j.type}</p></div>
+        <a href="#apply" class="btn btn--sm btn--outline-dark" onclick="document.getElementById('aPosition').value='${j.title}'">Apply</a>
+      </div>`).join('');
+    posSelect.innerHTML += CAREERS.map(j => `<option value="${j.title}">${j.title}</option>`).join('');
+  } else {
+    document.getElementById('jobEmpty').style.display = 'block';
+    posSelect.innerHTML += `<option value="General Application">General Application</option>`;
+  }
+  document.getElementById('resume').addEventListener('change', (e) => {
+    const label = document.getElementById('fileDropLabel');
+    label.textContent = e.target.files[0] ? `Selected: ${e.target.files[0].name}` : 'Click to upload your resume (PDF, DOC — max 5MB)';
+  });
+}
+
+function renderContactView(){
+  document.getElementById('callBtn').href = COMPANY.contact.phoneHref;
+  document.getElementById('waBtn').href = COMPANY.contact.whatsappHref;
+  document.getElementById('hoursText').textContent = COMPANY.hours;
+  document.getElementById('locList').innerHTML = COMPANY.locations.map(l => {
+    const hasMaps = l.mapsUrl && !/\?q=$/.test(l.mapsUrl);
+    return `
+    <div class="location-card">
+      <h4>${l.label}</h4>
+      ${contactRow(ICONS.pin, l.address, 'Address to be added', null)}
+      ${contactRow(ICONS.phone, l.phone, 'Phone number to be added', 'tel:')}
+      ${contactRow(ICONS.mail, l.email, 'Email address to be added', 'mailto:')}
+      ${hasMaps ? `<a href="${l.mapsUrl}" target="_blank" rel="noopener" class="btn btn--sm btn--outline-dark" style="margin-top:6px;">Open in Google Maps</a>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function renderPrivacyView(){
+  document.getElementById('privacyText').textContent = COMPANY.legal.privacy;
+}
+
+function renderTermsView(){
+  document.getElementById('termsText').textContent = COMPANY.legal.terms;
+}
+
+/* =========================================================================
+   ROUTER
+   Hash-based so the whole site works over file:// with no server, and so
+   deep links (e.g. #/products/category/degreasing) are shareable.
+   Anchors that do NOT start with "/" (e.g. "#enquiry", "#apply") are left
+   alone — those are ordinary same-page jump links, not routes.
+   ========================================================================= */
+
+const ROUTE_TITLES = {
+  home: "Veyron Chemtech — Industrial Surface Treatment Chemicals",
+  story: "Our Story | Veyron Chemtech",
+  mission: "Mission & Vision | Veyron Chemtech",
+  leadership: "Leadership | Veyron Chemtech",
+  journey: "Our Journey | Veyron Chemtech",
+  products: "Products — Surface Treatment Chemistry | Veyron Chemtech",
+  industries: "Industries We Serve | Veyron Chemtech",
+  rnd: "R&D & Infrastructure | Veyron Chemtech",
+  sustainability: "Sustainability & Community | Veyron Chemtech",
+  careers: "Careers | Veyron Chemtech",
+  contact: "Contact Us | Veyron Chemtech",
+  privacy: "Privacy Policy | Veyron Chemtech",
+  terms: "Terms of Service | Veyron Chemtech",
+  "404": "Page Not Found | Veyron Chemtech",
+};
+
+const ROUTES = [
+  { pattern: /^\/$/,                                            view: "home" },
+  { pattern: /^\/company\/our-story$/,                          view: "story" },
+  { pattern: /^\/company\/mission-vision$/,                     view: "mission" },
+  { pattern: /^\/company\/leadership$/,                         view: "leadership" },
+  { pattern: /^\/company\/journey$/,                            view: "journey" },
+  { pattern: /^\/products$/,                                    view: "products" },
+  { pattern: /^\/products\/category\/([a-z0-9-]+)$/,           view: "products-category" },
+  { pattern: /^\/products\/product\/([a-z0-9-]+)\/([a-z0-9-]+)$/, view: "products-product" },
+  { pattern: /^\/industries$/,                                  view: "industries" },
+  { pattern: /^\/rnd$/,                                         view: "rnd" },
+  { pattern: /^\/sustainability$/,                              view: "sustainability" },
+  { pattern: /^\/careers$/,                                     view: "careers" },
+  { pattern: /^\/contact$/,                                     view: "contact" },
+  { pattern: /^\/privacy$/,                                     view: "privacy" },
+  { pattern: /^\/terms$/,                                       view: "terms" },
+  { pattern: /^\/404$/,                                         view: "404" },
+];
+
+function showView(view, params){
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('is-active'));
+  const el = document.getElementById('view-' + view);
+  (el || document.getElementById('view-404')).classList.add('is-active');
+
+  if(view === 'products-category') renderProductsCategoryView(params[0]);
+  if(view === 'products-product') renderProductsProductView(params[0], params[1]);
+
+  if(!['products-category', 'products-product'].includes(view)){
+    document.title = ROUTE_TITLES[view] || ROUTE_TITLES['404'];
+  }
+
+  window.scrollTo({ top: 0, behavior: 'auto' });
+  updateActiveNav(view);
+}
+
+function router(){
+  const raw = window.location.hash.slice(1);
+  if(!raw.startsWith('/')) return; // in-page anchor (e.g. #enquiry, #apply) — not a route change
+
+  for(const r of ROUTES){
+    const m = raw.match(r.pattern);
+    if(m){ showView(r.view, m.slice(1)); return; }
+  }
+  showView('404', []);
+}
+
+/* ---------------- Init ---------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  renderHeader();
+  renderFooter();
+
+  // Render every static view once up front. Product category/detail views
+  // are param-driven and re-render on each navigation inside showView().
+  renderHomeView();
+  renderStoryView();
+  renderMissionView();
+  renderLeadershipView();
+  renderJourneyView();
+  renderProductsView();
+  renderIndustriesView();
+  renderRndView();
+  renderSustainabilityView();
+  renderCareersView();
+  renderContactView();
+  renderPrivacyView();
+  renderTermsView();
+
+  initReveal();
+  initCounters();
+  initForms();
+
+  window.addEventListener('hashchange', router);
+  if(!window.location.hash){ window.location.hash = '#/'; }
+  router();
+});
+</script>
+</body>
+</html>
